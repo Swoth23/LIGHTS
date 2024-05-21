@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit - USDT TON Crypto Investment Mining</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input {
+            padding: 8px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Deposit</h1>
+    </header>
+    <main>
+        <form id="depositForm">
+            <label for="depositAmount">Deposit Amount (USDT):</label>
+            <input type="text" id="depositAmount" name="depositAmount" placeholder="Enter amount">
+            <label for="walletAddress">Wallet Address:</label>
+            <input type="text" id="walletAddress" name="walletAddress" placeholder="Enter wallet address">
+            <label for="walletTag">Wallet Tag:</label>
+            <input type="text" id="walletTag" name="walletTag" placeholder="Enter wallet tag">
+            <button type="submit">Deposit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 USDT TON Crypto Investment Mining</p>
+    </footer>
+
+    <script>
+        document.getElementById("depositForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const depositAmount = parseFloat(document.getElementById("depositAmount").value);
+            const walletAddress = document.getElementById("walletAddress").value;
+            const walletTag = document.getElementById("walletTag").value;
+
+            // You can add your deposit handling logic here
+            console.log("Deposit Amount:", depositAmount);
+            console.log("Wallet Address:", walletAddress);
+            console.log("Wallet Tag:", walletTag);
+
+            // Clear input fields after submission
+            document.getElementById("depositAmount").value = "";
+            document.getElementById("walletAddress").value = "";
+            document.getElementById("walletTag").value = "";
+        });
+    </script>
+</body>
+</html>

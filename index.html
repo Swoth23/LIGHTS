@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great USDT Ton Crypto Investments</title>
+    <link rel="stylesheet" href="/front-end/css_files/style2.css">
+    <script defer src="scripts.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>
+            <nav class="logo">
+                <img src="/pics/logo5.png" alt="Logo"> <!-- Replace with your logo path -->
+            </nav>
+            Great USDT Ton Crypto Investments
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#vision" id="visionLink">Our Vision</a></li>
+            </ul>
+        </nav>
+        <div class="auth-links">
+            <a href="/front-end/Html_files/signup.html">Sign Up</a>
+            <a href="/front-end/Html_files/login.html">Login</a>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <h2>Invest in the Future of Crypto</h2>
+        <p>Join the best platform for USDT Ton crypto investments and mining. Secure, reliable, and profitable.</p>
+        <button>Get Started</button>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>Crypto Investments</h3>
+                <p>We provide the best investment strategies for your USDT Ton assets to maximize your profits.</p>
+            </div>
+            <div class="service-card">
+                <h3>Mining Services</h3>
+                <p>Our state-of-the-art mining facilities ensure high efficiency and great returns on your investments.</p>
+            </div>
+            <div class="service-card">
+                <h3>24/7 Support</h3>
+                <p>Our dedicated support team is always here to help you with any issues or questions you may have.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 LIGHTS Investments. All rights reserved.</p>
+    </footer>
+
+    <!-- The Modal -->
+    <div id="visionModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Our Vision</h2>
+            <p>At LIGHTS, our vision is to power progress 💡 by providing safe, reliable, 
+                and sustainable energy solutions ⚡️ to our customers and communities 🌎. We 
+                are committed to leading the transition towards a cleaner, more efficient energy 
+                future 🌱 while maintaining affordable rates 💰 and exceptional service 🤩.</p>
+                <p class="note">NOTE: THIS SITE IS NOT A FREE SITE!!! ONLY THOSE WHO CLAIMED THE FREE MINER WOULD BE ABLE TO WITHDRAW FOR FREE</p>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scrolling to all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add interaction for the Get Started button
+        document.querySelector('.hero button').addEventListener('click', () => {
+            alert('Thank you for choosing us! We will guide you through the investment process.');
+        });
+
+        // Modal functionality for "Our Vision"
+        var modal = document.getElementById("visionModal");
+        var btn = document.getElementById("visionLink");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

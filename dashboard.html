@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - USDT TON Crypto Investment Mining</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+    </header>
+    <main>
+        <section class="balance">
+            <h2>Account Balance</h2>
+            <p>Your current balance: <span id="accountBalance">$0.00</span></p>
+        </section>
+        
+        <section class="referral">
+            <h2>Referral Program</h2>
+            <p>Your referral link: <a href="#" id="referralLink">https://example.com/ref=123456</a></p>
+            <p>Total referrals: <span id="totalReferrals">0</span></p>
+            <p>Earned referral commission: <span id="referralCommission">$0.00</span></p>
+        </section>
+
+        <section class="transactions">
+            <h2>Recent Transactions</h2>
+            <ul id="transactionList">
+                <!-- Transaction items will be dynamically populated here -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 USDT TON Crypto Investment Mining</p>
+    </footer>
+
+    <script>
+        // Sample data for demonstration
+        const accountBalance = 10;
+        const totalReferrals = 10;
+        const referralCommission = 50;
+        const recentTransactions = ["Transaction 1", "Transaction 2", "Transaction 3"];
+
+        // Update account balance
+        document.getElementById("accountBalance").textContent = `$${accountBalance.toFixed(2)}`;
+
+        // Update referral program details
+        document.getElementById("totalReferrals").textContent = totalReferrals;
+        document.getElementById("referralCommission").textContent = `$${referralCommission.toFixed(2)}`;
+
+        // Populate recent transactions
+        const transactionList = document.getElementById("transactionList");
+        recentTransactions.forEach(transaction => {
+            const li = document.createElement("li");
+            li.textContent = transaction;
+            transactionList.appendChild(li);
+        });
+    </script>
+</body>
+</html>

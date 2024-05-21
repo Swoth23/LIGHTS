@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdrawal - Crypto Investment</title>
+    <link rel="stylesheet" href="/front-end/css_files/dopsite.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Crypto Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="withdrawal.html">Withdrawal</a></li>
+                <li><a href="deposit.html">Deposit</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="withdrawal">
+            <h1>Withdraw Funds</h1>
+            <form action="process_withdrawal.php" method="post">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+                <button type="submit">Withdraw</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Crypto Investment. All rights reserved.</p>
+    </footer>
+</body>
+</html>

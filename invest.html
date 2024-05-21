@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Page - Great USDT Ton Crypto Investments</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #282c34;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .investment-form {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .investment-form input, .investment-form button {
+            padding: 0.75rem;
+            font-size: 1rem;
+            margin: 0.5rem;
+        }
+        .investment-status {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        footer {
+            background-color: #282c34;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Great USDT Ton Crypto Investments</h1>
+    </header>
+    <div class="container">
+        <div class="investment-form">
+            <h2>Select Investment Amount</h2>
+            <input type="number" id="investment-amount" placeholder="Enter amount in USDT">
+            <button onclick="startInvestment()">Invest Now</button>
+        </div>
+        <div class="investment-status" id="investment-status">
+            <!-- Status updates will appear here -->
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Great USDT Ton Crypto Investments. All rights reserved.</p>
+    </footer>
+    <script>
+        function startInvestment() {
+            const amount = document.getElementById('investment-amount').value;
+            if (amount <= 0) {
+                alert('Please enter a valid investment amount.');
+                return;
+            }
+            document.getElementById('investment-status').innerHTML = `You have invested ${amount} USDT. Mining will start in 50 minutes.`;
+            setTimeout(() => {
+                document.getElementById('investment-status').innerHTML = `Your ${amount} USDT investment has started mining.`;
+            }, 3000); // 50 minutes = 50 * 60 * 1000 ms
+        }
+    </script>
+</body>
+</html>
